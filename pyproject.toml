@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "isbo-api"
+version = "0.1.0"
+description = "Invoice and Service Bills Organiser aka ISBO"
+authors = ["Nicolas Vargas <ndvargas95@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+minio = "^7.2.3"
+pymongo = "^4.8.0"
+flask = {version = "~2.3.2", extras = ["async"]}
+python-dotenv = "^1.0.0"
+uvicorn = "~0.23.2"
+asgiref = "~3.7.2"
+python-telegram-bot = "21.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
